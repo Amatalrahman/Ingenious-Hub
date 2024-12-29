@@ -70,6 +70,10 @@ This project is a multi-planar image viewer designed to display and interact wit
 - **Zoom:** Scroll the mouse wheel while holding `Ctrl`.
 - **Brightness and Contrast:** Drag the mouse while holding `Shift`.
 
+# 🌟 Watch the Demo Video Here! 🌟
+[Click to Watch the Video](https://drive.google.com/file/d/1-f-Y73KEmUQJci5r9FVvSggMTy1x5dlX/view?usp=drivesdk)
+
+
 ## Contributing
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
