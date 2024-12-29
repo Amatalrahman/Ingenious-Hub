@@ -96,6 +96,9 @@ Provide users with multiple ways to explore DICOM metadata:
    - **Anonymization:** Anonymize the DICOM file with customizable prefix options.
 
 ---
+# 🌟 Watch the Demo Video Here! 🌟
+[Click to Watch the Video](https://drive.google.com/file/d/1-U6k1GCXTDIo3nV9pGvdfcCmBv1fT2xB/view?usp=drivesdk)
+
 
 ## Contribution
 
