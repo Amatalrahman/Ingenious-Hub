@@ -1,4 +1,4 @@
-# DICOM Viewer 
+# DICOM Viewer
 
 ## Overview
 
@@ -17,8 +17,6 @@ Before developing the DICOM viewer, it is recommended to explore existing free D
 - **[IMAIOS](https://www.imaios.com/)**
 - **[ezDICOM](http://www.ezdicom.com/)** (Open-source code available)
 - **[OsiriX](https://www.osirix-viewer.com/)** (Famous for Apple OS)
-
-
 
 ---
 
@@ -58,28 +56,21 @@ Provide users with multiple ways to explore DICOM metadata:
 
 ## Features
 
-1. **User-Friendly Interface:** Intuitive and accessible UI for exploring and interacting with DICOM files.
-2. **Metadata Exploration:** Seamlessly browse and search DICOM tags and categories.
-3. **Image Display:** Efficient rendering of 2D, M2D, and 3D DICOM images.
-4. **Anonymization Tools:** Protect sensitive patient information with customizable anonymization options.
+1. **User-Friendly Interface**: Intuitive and accessible UI for exploring and interacting with DICOM files.
+2. **Metadata Exploration**: Seamlessly browse and search DICOM tags and categories.
+3. **Image Display**: Efficient rendering of 2D, M2D, and 3D DICOM images.
+4. **Anonymization Tools**: Protect sensitive patient information with customizable anonymization options.
 
 ---
 
 ## Setup & Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/dicom-viewer.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd dicom-viewer
-   ```
-3. Install required dependencies:
+1. Open the project in your IDE.
+2. Install required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the application:
+3. Run the application:
    ```bash
    python main.py
    ```
@@ -91,14 +82,14 @@ Provide users with multiple ways to explore DICOM metadata:
 1. Launch the DICOM viewer application.
 2. Use the file browser to load a DICOM file.
 3. Navigate through the following features:
-   - **Image Display:** View 2D, M2D, or 3D images as appropriate.
-   - **Tags Exploration:** Explore all tags, search specific tags, or explore by category.
-   - **Anonymization:** Anonymize the DICOM file with customizable prefix options.
+   - **Image Display**: View 2D, M2D, or 3D images as appropriate.
+   - **Tags Exploration**: Explore all tags, search specific tags, or explore by category.
+   - **Anonymization**: Anonymize the DICOM file with customizable prefix options.
 
 ---
+
 # 🌟 Watch the Demo Video Here! 🌟
 [Click to Watch the Video](https://drive.google.com/file/d/1-U6k1GCXTDIo3nV9pGvdfcCmBv1fT2xB/view?usp=drivesdk)
-
 
 ## Contribution
 
@@ -124,3 +115,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 Special thanks to the developers of the existing DICOM viewers for inspiration and to the community for their feedback and support.
 
+---
+
+Let me know if you need any other changes!
