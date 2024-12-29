@@ -1,6 +1,3 @@
-Here's the updated README file with the section for cloning and path removed:
-
----
 
 # 3D Anatomy Organs Puzzle Game - Pelvis
 
