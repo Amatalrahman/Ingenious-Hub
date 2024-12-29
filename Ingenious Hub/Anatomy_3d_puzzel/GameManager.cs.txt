@@ -1,0 +1,90 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;  // This is required to work with TextMeshPro components
+
+
+public class GameManager : MonoBehaviour
+{
+     public TextMeshProUGUI timerText;        // Reference to the Timer Text (TextMeshPro)
+    public TextMeshProUGUI winLoseText;      // Reference to the Win/Lose Text (TextMeshPro)
+    public Button startButton;               // Reference to the Start Button
+    public GameObject[] organParts;          // Reference to the Organ Parts
+
+    private float timeLimit = 120f;  // 2 minutes
+    private bool gameStarted = false;
+
+    void Start()
+    {
+        startButton.onClick.AddListener(StartGame);
+        winLoseText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(true);
+    }
+
+    void Update()
+    {
+        if (gameStarted)
+        {
+            timeLimit -= Time.deltaTime;
+            timerText.text = "Time: " + Mathf.Round(timeLimit).ToString();
+
+            if (timeLimit <= 0)
+                EndGame(false);
+
+            if (CheckWinCondition())
+                EndGame(true);
+        }
+    }
+
+    void StartGame()
+    {
+        gameStarted = true;
+        startButton.gameObject.SetActive(false);
+        ScatterOrganParts();
+    }
+
+    void ScatterOrganParts()
+    {
+        // Define the boundaries for the scattering area
+        float constantX = -6.2f; // Fix X position to a constant value (you can change this to whatever you want)
+        float minY = 1f, maxY = 6f;  // Y-axis boundary values (vertical range)
+        float minZ = -7f, maxZ = -1f; // Z-axis boundary values (depth)
+        float minRotation = 0f, maxRotation = 360f;  // Rotation angle range for Y-axis (in degrees)
+
+        // Scatter each organ part within the Y and Z boundaries (X will stay constant)
+        foreach (GameObject part in organParts)
+        {
+            // Generate random positions for Y and Z axes
+            float randomY = Random.Range(minY, maxY);  // Random Y position within bounds
+            float randomZ = Random.Range(minZ, maxZ);  // Random Z position within bounds
+
+            // Generate a random rotation around the Y-axis
+            float randomRotation = Random.Range(minRotation, maxRotation);  // Random rotation angle in degrees
+            Quaternion rotation = Quaternion.Euler(0f, randomRotation, 0f);  // Apply the random rotation around the Y-axis
+
+            // Set the organ part's new position with a fixed X value and apply the random Y-axis rotation
+            part.transform.position = new Vector3(constantX, randomY, randomZ);
+            part.transform.rotation = rotation;  // Set the random rotation
+        }
+    }
+
+
+
+
+    bool CheckWinCondition()
+    {
+        foreach (GameObject part in organParts)
+        {
+            OrganPart organPart = part.GetComponent<OrganPart>();
+            if (!organPart.IsInCorrectPosition()) return false;
+        }
+        return true;
+    }
+
+    void EndGame(bool won)
+    {
+        gameStarted = false;
+        timerText.gameObject.SetActive(false);
+        winLoseText.gameObject.SetActive(true);
+        winLoseText.text = won ? "You Win!" : "Game Over!";
+    }
+}

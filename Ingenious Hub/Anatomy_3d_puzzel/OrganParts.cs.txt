@@ -1,0 +1,42 @@
+using UnityEngine;
+
+public class OrganPart : MonoBehaviour
+{
+    public Transform correctPosition;
+    public float snapDistance = 0.5f;
+
+    public bool IsInCorrectPosition()
+    {
+        return Vector3.Distance(transform.position, correctPosition.position) < snapDistance;
+    }
+
+    void Update()
+    {
+        if (IsInCorrectPosition())
+        {
+            transform.position = correctPosition.position;
+            transform.rotation = correctPosition.rotation;
+        }
+    }
+}
+
+
+
+
+
+//using UnityEngine;
+
+//public class OrganPart : MonoBehaviour
+//{
+//  public Vector3 correctPosition;
+
+//void Start()
+//{
+//  correctPosition = transform.position;
+//}
+
+//public bool IsInCorrectPosition()
+//{
+//  return Vector3.Distance(transform.position, correctPosition) < 0.5f;
+//}
+//}

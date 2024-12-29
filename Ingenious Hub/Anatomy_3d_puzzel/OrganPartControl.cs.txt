@@ -1,0 +1,112 @@
+using UnityEngine;
+
+public class OrganPartControl : MonoBehaviour
+{
+    // Movement speed and rotation speed
+    public float moveSpeed = 5f;  // Movement speed
+    public float rotationSpeed = 100f;  // Rotation speed
+
+    // Track if this organ part is selected
+    private bool isSelected = false;
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Check for selection with a mouse click (left button)
+        if (Input.GetMouseButtonDown(0)) // Left mouse button click
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);  // Create a ray from the camera to the mouse position
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit this organ part
+                if (hit.transform == transform)
+                {
+                    isSelected = true;  // Mark this part as selected
+                }
+                else
+                {
+                    isSelected = false;  // Unselect if clicked elsewhere
+                }
+            }
+        }
+
+        // Only apply movement and rotation if the organ part is selected
+        if (isSelected)
+        {
+            // Handle movement using WASD (only Y and Z axes)
+            float moveY = 0f;
+            float moveZ = 0f;
+
+            // W and S for vertical movement (Y-axis)
+            if (Input.GetKey(KeyCode.W)) // Move up (positive Y direction)
+            {
+                moveY = 1f;
+            }
+            else if (Input.GetKey(KeyCode.S)) // Move down (negative Y direction)
+            {
+                moveY = -1f;
+            }
+
+            // A and D for movement along Z-axis
+            if (Input.GetKey(KeyCode.A)) // Move left (negative Z direction)
+            {
+                moveZ = -1f;
+            }
+            else if (Input.GetKey(KeyCode.D)) // Move right (positive Z direction)
+            {
+                moveZ = 1f;
+            }
+
+            // Apply movement based on user input (no movement on X-axis)
+            Vector3 movement = new Vector3(0f, moveY, moveZ) * moveSpeed * Time.deltaTime; // Only move in Y and Z axes
+            transform.Translate(movement, Space.World);  // Use Space.World for global movement
+
+            // Handle rotation using Arrow Keys or Q/E/R/F
+            float rotationY = 0f;
+            float rotationX = 0f;
+            float rotationZ = 0f;
+
+            if (Input.GetKey(KeyCode.LeftArrow)) // Rotate left around Y-axis
+            {
+                rotationY = -1f;
+            }
+            else if (Input.GetKey(KeyCode.RightArrow)) // Rotate right around Y-axis
+            {
+                rotationY = 1f;
+            }
+
+            if (Input.GetKey(KeyCode.UpArrow)) // Rotate up around X-axis
+            {
+                rotationX = 1f;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow)) // Rotate down around X-axis
+            {
+                rotationX = -1f;
+            }
+
+            if (Input.GetKey(KeyCode.Q)) // Rotate left around X-axis
+            {
+                rotationX = 1f;
+            }
+            else if (Input.GetKey(KeyCode.E)) // Rotate right around X-axis
+            {
+                rotationX = -1f;
+            }
+
+            if (Input.GetKey(KeyCode.R)) // Rotate up around Z-axis
+            {
+                rotationZ = 1f;
+            }
+            else if (Input.GetKey(KeyCode.F)) // Rotate down around Z-axis
+            {
+                rotationZ = -1f;
+            }
+
+            // Apply rotation to the organ part
+            Vector3 rotation = new Vector3(rotationX, rotationY, rotationZ) * rotationSpeed * Time.deltaTime;
+            transform.Rotate(rotation);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+using UnityEngine;
+
+public class OrganPartMovement : MonoBehaviour
+{
+    private bool isDragging = false;  // Flag to track if the part is being dragged
+    private Vector3 offset;           // Offset between the mouse position and the part's position
+    private Camera mainCamera;        // The main camera
+    private Rigidbody rb;             // Rigidbody of the organ part for smooth movement
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        mainCamera = Camera.main;  // Get the main camera
+        rb = GetComponent<Rigidbody>();  // Get the Rigidbody component
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isDragging)
+        {
+            // Get the current mouse position in world space
+            Vector3 mousePosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.WorldToScreenPoint(transform.position).z));
+
+            // Move the part smoothly to the new position based on mouse movement
+            rb.MovePosition(mousePosition + offset);  // Offset ensures the part stays at the correct position relative to the mouse
+        }
+    }
+
+    // This is called when the mouse button is pressed down on the part
+    void OnMouseDown()
+    {
+        isDragging = true;
+
+        // Calculate the offset based on the initial position of the part and the mouse
+        offset = transform.position - mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.WorldToScreenPoint(transform.position).z));
+    }
+
+    // This is called when the mouse button is released
+    void OnMouseUp()
+    {
+        isDragging = false;
+    }
+}
