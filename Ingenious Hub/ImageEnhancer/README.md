@@ -44,7 +44,7 @@ This project is an image viewer application that allows users to view, modify, a
 
 ### Prerequisites
 To run the project, ensure you have the following installed:
-- Python 3.x (recommended version: 3.8+)
+- Python 3.x (recommended version: 3.10)
 - Required Python packages:
   - `numpy`
   - `matplotlib`
@@ -56,6 +56,7 @@ You can install the required dependencies using pip:
 ```bash
 pip install -r image_processing_requirements.txt
 ``
+
 ### Usage
 - Open a grayscale image file using the **Open Image** button.
 - Specify the zoom factor you want to apply to the image using the **Zoom Factor** input.
