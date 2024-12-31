@@ -48,17 +48,18 @@ For YOLO, follow the installation steps in the [YOLO repository](https://github.
 To run the program, use the following command:
 
 ```bash
-python track_players.py --video your_video_file.mp4
+python tracking.py --video your_video_file.mp4
 ```
 
 Replace `your_video_file.mp4` with the path to the football game video you want to process.
 
 ## Code Structure
 
-- `track_players.py`: Main script that runs the player detection and tracking.
+- `tracking.py`: Main script that runs the player detection and tracking.
 - `yolo_model.py`: YOLO model implementation and loading of the pretrained weights.
-- `heatmap.py`: Code to generate and display the heatmap.
-- `utils.py`: Utility functions, including player selection and frame processing.
+- `finalheatmap.py`: Code to generate and display the heatmap.
+- `gui.py`: Graphical user interface (GUI) for player selection and video visualization.
+- `trackingtry.py`: Experimental script for additional tracking functionalities or tests.
 
 ## Example Output
 
@@ -70,7 +71,6 @@ After running the script, you should see something like this:
 # 🌟 Watch the Demo Video Here! 🌟
 [Click to Watch the Video](https://drive.google.com/file/d/1-VQEzyu_30c19qpjU5LXZMvDuqoHHTB1/view?usp=drivesdk)
 
-
 ## Contributing
 
 If you'd like to contribute to this project, feel free to fork the repository, submit issues, or create pull requests.
@@ -81,4 +81,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This README provides an overview, setup instructions, and usage details for your project, and it's ready to be added to your GitHub repository.
+Let me know if you'd like further modifications!

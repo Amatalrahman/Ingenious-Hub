@@ -1,3 +1,4 @@
+
 # 3D Anatomy Organs Puzzle Game - Pelvis
 
 This project involves creating a 3D anatomy puzzle game where users can interact with different parts of the pelvis organ, rotate, flip, and manually piece the organ back together. The pelvis is cut into several parts, randomized in 3D space, and the user must align them correctly, much like a 3D Tetris game.
@@ -48,17 +49,11 @@ Provide the user with intuitive controls:
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/3d-anatomy-puzzle.git
-    cd 3d-anatomy-puzzle
-    ```
+1. Open the project in Unity.
 
-2. Open the project in Unity.
+2. Import your 3D pelvis model into Unity by copying the model files (e.g., `.fbx`) into the `Assets` folder.
 
-3. Import your 3D pelvis model into Unity by copying the model files (e.g., `.fbx`) into the `Assets` folder.
-
-4. Develop the game logic and implement the interactions (rotations, flips, and manual assembly).
+3. Develop the game logic and implement the interactions (rotations, flips, and manual assembly).
 
 ## Usage
 
@@ -85,4 +80,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This README now clearly states that the project is focused on the pelvis organ for the anatomy puzzle game.
+Let me know if you'd like further changes!
