@@ -54,32 +54,14 @@ To run the project, ensure you have the following installed:
 
 You can install the required dependencies using pip:
 ```bash
-pip install -r requirements.txt
-```
-
-### Running the Application
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/image-viewer.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd image-viewer
-   ```
-3. Launch the application:
-   ```bash
-   python main.py
-   ```
-
+pip install -r image_processing_requirements.txt
+``
 ### Usage
 - Open a grayscale image file using the **Open Image** button.
 - Specify the zoom factor you want to apply to the image using the **Zoom Factor** input.
 - Apply noise or denoising techniques using the corresponding buttons.
 - The histogram is updated in real-time with every change applied to the image.
 - Adjust the image's brightness, contrast, and apply filters through the user interface.
-
-## Example Images
-Make sure to have different grayscale images ready to test the application. Sample images can be placed in the `images/` folder in the project directory.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -89,7 +71,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Structure of the Project:
 
 - `main.py`: Main application code for the image viewer.
-- `requirements.txt`: List of Python packages required to run the application.
-- `images/`: Folder containing sample grayscale images for testing.
-- `docs/`: Documentation folder with detailed explanations for each feature.
+- `image_processing_requirements.txt`: List of Python packages required to run the application.
+
 
