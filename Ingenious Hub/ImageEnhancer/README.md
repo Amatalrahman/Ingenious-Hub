@@ -39,6 +39,29 @@ This project is an image viewer application that allows users to view, modify, a
     - CLAHE (Contrast Limited Adaptive Histogram Equalization)
     - **Gamma Correction** (Contrast adjustment using gamma values)
   - **Custom Contrast Adjustment** (A technique developed for contrast improvement beyond standard methods)
+  - 
+- **Noise Application**:
+  - The user can add three types of noise to the image:
+    - **Gaussian Noise**: Random noise with a normal distribution.
+    - **Salt-and-Pepper Noise**: Random occurrences of black and white pixels.
+    - **Speckle Noise**: Grainy noise affecting the image.
+
+- **Denoising Techniques**:
+  - Three different denoising techniques can be applied to the image:
+    - **Median Filter**: A non-linear filter that replaces each pixel with the median value of its neighbors.
+    - **Gaussian Filter**: A linear filter that smooths the image by averaging pixel values within a neighborhood.
+    - **Bilateral Filter**: A filter that smooths the image while preserving edges by considering both spatial and intensity differences.
+
+- **Filters**:
+  - The user can apply low-pass and high-pass filters to modify the image:
+    - **Low-pass Filter**: Used to blur the image or reduce high-frequency noise.
+    - **High-pass Filter**: Used to enhance edges and details in the image.
+
+- **Contrast and Brightness Adjustment**:
+  - The user can change the brightness and contrast of the image to enhance details or correct lighting.
+
+- **Custom Contrast Adjustment**:
+  - A custom technique, such as **Gamma Correction**, is available for contrast adjustment.
 
 ## Getting Started
 
