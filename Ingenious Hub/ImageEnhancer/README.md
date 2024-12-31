@@ -55,8 +55,8 @@ To run the project, ensure you have the following installed:
 You can install the required dependencies using pip:
 ```bash
 pip install -r image_processing_requirements.txt
-``
-
+```
+ذذ
 ### Usage
 - Open a grayscale image file using the **Open Image** button.
 - Specify the zoom factor you want to apply to the image using the **Zoom Factor** input.
