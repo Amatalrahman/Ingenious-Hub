@@ -23,37 +23,20 @@ The key principle we challenge in this project is the **BREAKING LAW OF RELATIVI
   3. **Demonstrations:** Comparison between traditional imaging systems (CT, MRI, X-ray) and QTI to highlight enhanced performance.
   4. **Conclusion:** The potential impact of QTI on medical diagnostics and ethical considerations.
 
+## 🎬 **Video Overview**
+
+The following video explains the concept of Quantum Time Imaging and how it breaks classical boundaries:
+- 📽️ **[Click here to watch the video on Google Drive](https://drive.google.com/file/d/1-f2mrYQOZB8Gzcjy5uQLU0Zn-kKZGk_J/view?usp=drivesdk)** 📽️
+
+
 ## Slide Overview
 - A single slide containing:
   - Key points about the broken law.
   - Diagrams showcasing QTI's process.
   - Citations in IEEE format.
 
-## Getting Started
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/quantum-time-imaging.git
-   ```
-
-2. **Navigate to the project directory:**
-   ```bash
-   cd quantum-time-imaging
-   ```
-
-3. **View the animation video:**
-   The video is located in the `media` folder.
-
-4. **Access the documentation:**
-   Detailed explanations are available in the `docs` folder.
-
 ## Evaluation
 The project will be evaluated based on criteria such as creativity, scientific feasibility, visual quality, clarity of explanation, and overall impact. This will ensure a fair and comprehensive assessment of all aspects of the project.
-
-## Citation Example
-The references for this project will be as follows:
-- [1] M. Hanks, “Reconciling General Relativity and Quantum Mechanics through Finsler Geometry,” The Debrief, Nov. 2023. [Online]. Available: https://www.thedebrief.org
-- [2] phys.org, “Breaking Einstein's Relativity: Implications for Quantum Mechanics,” Phys.org, Oct. 2023. [Online]. Available: https://www.phys.org
-- [3] APS Journals, “Quantum Imaging and Entanglement-Based Scanning,” APS Physics Journal, vol. 75, no. 11, pp. 103–115, Oct. 2023.
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
