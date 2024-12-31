@@ -39,12 +39,35 @@ This project is an image viewer application that allows users to view, modify, a
     - CLAHE (Contrast Limited Adaptive Histogram Equalization)
     - **Gamma Correction** (Contrast adjustment using gamma values)
   - **Custom Contrast Adjustment** (A technique developed for contrast improvement beyond standard methods)
+  - 
+- **Noise Application**:
+  - The user can add three types of noise to the image:
+    - **Gaussian Noise**: Random noise with a normal distribution.
+    - **Salt-and-Pepper Noise**: Random occurrences of black and white pixels.
+    - **Speckle Noise**: Grainy noise affecting the image.
+
+- **Denoising Techniques**:
+  - Three different denoising techniques can be applied to the image:
+    - **Median Filter**: A non-linear filter that replaces each pixel with the median value of its neighbors.
+    - **Gaussian Filter**: A linear filter that smooths the image by averaging pixel values within a neighborhood.
+    - **Bilateral Filter**: A filter that smooths the image while preserving edges by considering both spatial and intensity differences.
+
+- **Filters**:
+  - The user can apply low-pass and high-pass filters to modify the image:
+    - **Low-pass Filter**: Used to blur the image or reduce high-frequency noise.
+    - **High-pass Filter**: Used to enhance edges and details in the image.
+
+- **Contrast and Brightness Adjustment**:
+  - The user can change the brightness and contrast of the image to enhance details or correct lighting.
+
+- **Custom Contrast Adjustment**:
+  - A custom technique, such as **Gamma Correction**, is available for contrast adjustment.
 
 ## Getting Started
 
 ### Prerequisites
 To run the project, ensure you have the following installed:
-- Python 3.x (recommended version: 3.8+)
+- Python 3.x (recommended version: 3.10)
 - Required Python packages:
   - `numpy`
   - `matplotlib`
@@ -54,32 +77,15 @@ To run the project, ensure you have the following installed:
 
 You can install the required dependencies using pip:
 ```bash
-pip install -r requirements.txt
+pip install -r image_processing_requirements.txt
 ```
-
-### Running the Application
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/image-viewer.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd image-viewer
-   ```
-3. Launch the application:
-   ```bash
-   python main.py
-   ```
-
+ذذ
 ### Usage
 - Open a grayscale image file using the **Open Image** button.
 - Specify the zoom factor you want to apply to the image using the **Zoom Factor** input.
 - Apply noise or denoising techniques using the corresponding buttons.
 - The histogram is updated in real-time with every change applied to the image.
 - Adjust the image's brightness, contrast, and apply filters through the user interface.
-
-## Example Images
-Make sure to have different grayscale images ready to test the application. Sample images can be placed in the `images/` folder in the project directory.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -89,7 +95,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Structure of the Project:
 
 - `main.py`: Main application code for the image viewer.
-- `requirements.txt`: List of Python packages required to run the application.
-- `images/`: Folder containing sample grayscale images for testing.
-- `docs/`: Documentation folder with detailed explanations for each feature.
+- `image_processing_requirements.txt`: List of Python packages required to run the application.
+
 
