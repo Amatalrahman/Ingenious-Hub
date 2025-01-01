@@ -35,10 +35,6 @@ This project focuses on developing an AI model to classify the main organs in me
    git clone https://github.com/yourusername/medical-classification.git
    cd medical-classification
    ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 1. Train the model:
@@ -49,6 +45,11 @@ This project focuses on developing an AI model to classify the main organs in me
    ```bash
    python test_model.py --image_path /path/to/image
    ```
+## 🎥 Demonstration Video  
+To better understand the application's features and functionality, watch the demonstration video here:  
+
+[![Watch the Video](https://img.shields.io/badge/Watch-Demo%20Video-blue?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/10Oytu-hFmUK7M7d6o4Q3U-Umv4bUAU1e/view?usp=drivesdk)  
+
 
 ## Project Structure
 ```
