@@ -45,9 +45,11 @@ This project focuses on developing an AI model to classify the main organs in me
    ```bash
    python test_model.py --image_path /path/to/image
    ```
-## 📹 Watch the Video
+## 🎥 Demonstration Video  
+To better understand the application's features and functionality, watch the demonstration video here:  
 
-[![Watch the video](https://img.youtube.com/vi/107IjI9yKqkQrKALrB-N5ODVivy3jgXer/0.jpg)](https://drive.google.com/file/d/107IjI9yKqkQrKALrB-N5ODVivy3jgXer/view?usp=drivesdk)
+[![Watch the Video](https://img.shields.io/badge/Watch-Demo%20Video-blue?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/10Oytu-hFmUK7M7d6o4Q3U-Umv4bUAU1e/view?usp=drivesdk)  
+
 
 ## Project Structure
 ```
