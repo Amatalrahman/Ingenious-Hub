@@ -26,7 +26,7 @@ The key principle we challenge in this project is the **BREAKING LAW OF RELATIVI
 ## 🎬 **Video Overview**
 
 The following video explains the concept of Quantum Time Imaging and how it breaks classical boundaries:
-- 📽️ **[Click here to watch the video on Google Drive](https://drive.google.com/file/d/1-f2mrYQOZB8Gzcjy5uQLU0Zn-kKZGk_J/view?usp=drivesdk)** 📽️
+https://github.com/user-attachments/assets/46e9ee5f-073a-40f6-900f-823650ac4715
 
 
 ## Slide Overview
