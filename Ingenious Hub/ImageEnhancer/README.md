@@ -90,7 +90,7 @@ pip install -r image_processing_requirements.txt
 ## 🎥 Demonstration Video  
 To better understand the application's features and functionality, watch the demonstration video here:  
 
-[![Watch the Video](https://img.shields.io/badge/Watch-Demo%20Video-blue?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/10Oytu-hFmUK7M7d6o4Q3U-Umv4bUAU1e/view?usp=drivesdk)  
+https://github.com/user-attachments/assets/a7f068b5-7a7f-4350-b4f6-84e88ed99891
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
