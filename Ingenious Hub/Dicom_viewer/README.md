@@ -89,7 +89,7 @@ Provide users with multiple ways to explore DICOM metadata:
 ---
 
 # 🌟 Watch the Demo Video Here! 🌟
-[Click to Watch the Video](https://drive.google.com/file/d/1-U6k1GCXTDIo3nV9pGvdfcCmBv1fT2xB/view?usp=drivesdk)
+https://github.com/user-attachments/assets/4b4235fe-e315-4234-98de-5eac0ee16292
 
 ## Contribution
 
