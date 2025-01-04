@@ -69,7 +69,7 @@ After running the script, you should see something like this:
 - After selecting a player, a heatmap will appear showing their movement pattern.
 
 # 🌟 Watch the Demo Video Here! 🌟
-[Click to Watch the Video](https://drive.google.com/file/d/1-VQEzyu_30c19qpjU5LXZMvDuqoHHTB1/view?usp=drivesdk)
+https://github.com/user-attachments/assets/d3b9862f-f2b7-4a8a-aff7-1959675bcdab
 
 ## Contributing
 
