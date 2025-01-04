@@ -71,7 +71,8 @@ This project is a multi-planar image viewer designed to display and interact wit
 - **Brightness and Contrast:** Drag the mouse while holding `Shift`.
 
 # 🌟 Watch the Demo Video Here! 🌟
-[Click to Watch the Video](https://drive.google.com/file/d/1-f-Y73KEmUQJci5r9FVvSggMTy1x5dlX/view?usp=drivesdk)
+
+https://github.com/user-attachments/assets/760a8e3a-de94-4521-9cb6-2f8006e00fef
 
 
 ## Contributing
