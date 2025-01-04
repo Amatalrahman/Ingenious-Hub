@@ -64,7 +64,7 @@ To start the game:
 3. Select the pelvis puzzle from the UI, and interact with the pieces using the provided controls.
 
 # 🌟 Watch the Demo Video Here! 🌟
-[Click to Watch the Video](https://drive.google.com/file/d/1-KlUtqBIlVBjF2ZeH4XhJvn_-s8NKyFa/view?usp=drivesdk)
+https://github.com/user-attachments/assets/4195b367-6ea3-4d3d-a656-3c6500b4ee71
 
 ## Contributing
 
