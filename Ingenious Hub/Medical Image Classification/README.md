@@ -48,7 +48,7 @@ This project focuses on developing an AI model to classify the main organs in me
 ## 🎥 Demonstration Video  
 To better understand the application's features and functionality, watch the demonstration video here:  
 
-[![Watch the Video](https://img.shields.io/badge/Watch-Demo%20Video-blue?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/10Oytu-hFmUK7M7d6o4Q3U-Umv4bUAU1e/view?usp=drivesdk)  
+https://github.com/user-attachments/assets/c65ab1b8-d5fa-414e-8f0b-51de5b274c20
 
 
 ## Project Structure
