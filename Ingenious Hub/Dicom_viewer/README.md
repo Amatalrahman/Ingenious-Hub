@@ -117,4 +117,3 @@ Special thanks to the developers of the existing DICOM viewers for inspiration a
 
 ---
 
-Let me know if you need any other changes!
