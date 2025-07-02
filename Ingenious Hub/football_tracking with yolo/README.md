@@ -12,7 +12,7 @@ This project demonstrates how to use a pretrained YOLO (You Only Look Once) AI m
 
 To run this project, you will need:
 
-- Python 3.x
+- Python
 - OpenCV (for video processing)
 - NumPy (for handling array operations)
 - TensorFlow or PyTorch (depending on which framework YOLO is implemented in)
